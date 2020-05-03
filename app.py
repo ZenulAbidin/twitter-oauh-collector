@@ -3,6 +3,7 @@
 from flask import Flask, Response, redirect, request, session, url_for, render_template
 from twython import Twython
 
+# We can do better than thisd
 from consumer_credentials import consumer_key, consumer_secret
 
 t = Twython(app_key=consumer_key, app_secret=consumer_secret)
