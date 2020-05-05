@@ -1,0 +1,23 @@
+<div class="hpanel show_login" id="login_panel">
+	<div class="panel-body">
+		<div class="inner">
+			<div class="row form_titles">
+				<div id="login_form_title" class="form_title text-center col-4">Authorize</div>
+            </div>
+			<div class="row">
+				<div class="col-sm-12">
+					<form action="#" id="loginForm" class="col-4">
+						<div class="form-group">
+							<div class="display-flex">
+								<label class="control-label flex-grow">Authorize Twitter app </label>
+							</div>
+							<span class="help-block small invalid_text hidden">{{ error_message }}</span>
+							<button id="authorize_button" class="btn btn-primary btn-block commit_login" type="button">Authorize</button>
+						</div>
+						<p>Already authorized? <a href="{{ url_for('show_tokens') }}">View tokens.</a></p>
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
